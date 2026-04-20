@@ -1,0 +1,21 @@
+upload:
+  remote_server:
+    username: "ericspidle"
+    ip_address: "172.27.5.40"
+    tftp_root: "/home/gitlab-runner/tftp_root/"
+    additional_path: "boot_files/$(target)/"
+project:
+  - build_dir: "build-arv-release"
+    target: "rtk-nuvo"
+    images:
+      - "capdl-loader-image-pc99"
+      - "kernel-x86-pc-99"
+    dest_images:
+      - "rootserver"
+      - "sel4kernel"
+  - build_dir: "build-imx"
+    target: "imx"
+    images:
+      - "capdl-loader-image-imx"
+    dest_images:
+      - "imx8mm-image"
