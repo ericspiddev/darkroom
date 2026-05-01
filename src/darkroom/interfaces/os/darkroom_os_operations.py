@@ -1,5 +1,5 @@
-import abc
-class IDarkRoomOsOperations(metaclass=abc.ABCMeta):
+from abc import ABCMeta, abstractmethod
+class IDarkRoomOsOperations(metaclass=ABCMeta):
     @classmethod
     def __subclasshook__(cls, subclass):
         return (hasattr(subclass, 'file_exists') and
@@ -12,26 +12,26 @@ class IDarkRoomOsOperations(metaclass=abc.ABCMeta):
                 callable(open_file) or
                 NotImplemented)
 
-    @abc.abstractmethod
+    @abstractmethod
     def file_exists(self, path):
         raise NotImplementedError
 
-    @abc.abstractmethod
+    @abstractmethod
     def get_current_directory(self):
         raise NotImplementedError
 
-    @abc.abstractmethod
+    @abstractmethod
     def join_paths(self, path_one, path_two):
         raise NotImplementedError
 
-    @abc.abstractmethod
+    @abstractmethod
     def str_join_paths(self, path_one, path_two):
         raise NotImplementedError
 
-    @abc.abstractmethod
+    @abstractmethod
     def open_file(self, file_path, modes):
         raise NotImplementedError
 
-    @abc.abstractmethod
+    @abstractmethod
     def close_file(self, file_object):
         raise NotImplementedError
