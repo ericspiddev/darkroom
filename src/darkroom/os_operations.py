@@ -13,6 +13,9 @@ class OsOperations():
     def join_paths(self, path_one, path_two):
         return self.os_ops.join_paths(path_one, path_two)
 
+    def str_join_paths(self, path_one, path_two):
+        return self.os_ops.str_join_paths(path_one,path_two)
+
     def load_readonly_file(self, file_path):
         return self.os_ops.open_file(file_path, 'r')
 

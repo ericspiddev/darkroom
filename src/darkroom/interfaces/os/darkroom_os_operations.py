@@ -25,6 +25,10 @@ class IDarkRoomOsOperations(metaclass=abc.ABCMeta):
         raise NotImplementedError
 
     @abc.abstractmethod
+    def str_join_paths(self, path_one, path_two):
+        raise NotImplementedError
+
+    @abc.abstractmethod
     def open_file(self, file_path, modes):
         raise NotImplementedError
 
