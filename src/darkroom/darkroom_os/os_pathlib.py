@@ -1,5 +1,5 @@
-from interfaces.os.darkroom_os_operations import IDarkRoomOsOperations
 from pathlib import Path
+from darkroom.interfaces.os.darkroom_os_operations import IDarkRoomOsOperations
 class PathlibOsOperations(IDarkRoomOsOperations):
     def file_exists(self, file_path):
         return Path(file_path).exists()

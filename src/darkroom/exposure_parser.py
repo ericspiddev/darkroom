@@ -1,10 +1,8 @@
-
-from interfaces.os.darkroom_os_operations import IDarkRoomOsOperations
-from interfaces.transports.darkroom_transports import DarkRoomTransports
-from data.darkroom_data import DarkRoomDataClass
-from project import DarkRoomProject
 from dataclasses import dataclass
-
+from darkroom.interfaces.os.darkroom_os_operations import IDarkRoomOsOperations
+from darkroom.interfaces.transports.darkroom_transports import DarkRoomTransports
+from darkroom.data.darkroom_data import DarkRoomDataClass
+from darkroom.project import DarkRoomProject
 
 @dataclass
 class ParsedData():

@@ -1,5 +1,5 @@
 from yaml import safe_load, YAMLError
-from interfaces.parser.darkroom_parser import IDarkRoomParser
+from darkroom.interfaces.parser.darkroom_parser import IDarkRoomParser
 
 class YamlExposureParser(IDarkRoomParser):
     def parse_exposure(self, exposure_file):

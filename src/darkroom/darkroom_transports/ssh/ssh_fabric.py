@@ -1,5 +1,5 @@
-from interfaces.transports.darkroom_ssh import IDarkRoomSSHTransport
 from fabric import Connection
+from darkroom.interfaces.transports.darkroom_ssh import IDarkRoomSSHTransport
 
 class SSHFabric(IDarkRoomSSHTransport):
     def __init__(self):

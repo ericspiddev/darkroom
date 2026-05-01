@@ -1,5 +1,27 @@
 [build_system]
+requires = ["hatchling >= 1.26"]
+build-backend = "hatchling.build"
 
 [project]
+name="darkroom-cli"
+requires-python= ">= 3.14"
+version="2026.0.0a1"
+description="TBD"
+authors = [
+    {name = "Eric Spidle", email="ericspidledev@gmail.com"},
+]
+maintainers = [
+    {name = "Eric Spidle", email="ericspidledev@gmail.com"},
+]
+
+dependencies = [
+    "pyYAML",
+    "fabric",
+    "dataclasses",
+    "pathlib"
+]
+
+[project.scripts]
+darkroom= "darkroom.cli:develop"
 
 [tool]

@@ -1,6 +1,5 @@
-from interfaces.developments.darkroom_development import IDarkRoomDevelopment
-from exposure_parser import ParsedData
-
+from darkroom.interfaces.developments.darkroom_development import IDarkRoomDevelopment
+from darkroom.exposure_parser import ParsedData
 
 class ImageDevelopment():
     def __init__(self, data : DarkRoomProject, development: IDarkRoomDevelopment,

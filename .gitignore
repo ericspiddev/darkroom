@@ -2,3 +2,6 @@
 .env.*
 .*.yml
 __pycache__
+build/
+fake_build/
+*.egg-info

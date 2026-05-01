@@ -1,7 +1,6 @@
 from abc import ABCMeta, abstractmethod
 from dataclasses import dataclass, field
-from data.darkroom_data import DarkRoomDataClass
-from project import DarkRoomProjectTransport
+from darkroom.data.darkroom_data import DarkRoomDataClass
 
 @dataclass
 class SSHServer(DarkRoomDataClass):

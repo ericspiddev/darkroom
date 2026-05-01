@@ -1,7 +1,7 @@
 from dataclasses import dataclass, field
-from data.darkroom_data import DarkRoomDataClass
 from abc import abstractmethod
-from interfaces.transports.darkroom_transports import DarkRoomTransports
+from darkroom.data.darkroom_data import DarkRoomDataClass
+from darkroom.interfaces.transports.darkroom_transports import DarkRoomTransports
 @dataclass
 class DarkRoomProjectImage():
     source_path : str

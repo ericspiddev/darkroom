@@ -1,8 +1,8 @@
 import abc
-from interfaces.transports.darkroom_transports import DarkRoomTransports
-from interfaces.transports.darkroom_ssh import SSHTransportData, SSHServer
-from project import DarkRoomProject
-from data.darkroom_data import DarkRoomDataClass
+from darkroom.interfaces.transports.darkroom_transports import DarkRoomTransports
+from darkroom.interfaces.transports.darkroom_ssh import SSHTransportData, SSHServer
+from darkroom.project import DarkRoomProject
+from darkroom.data.darkroom_data import DarkRoomDataClass
 
 class IDarkRoomParser(metaclass=abc.ABCMeta):
 

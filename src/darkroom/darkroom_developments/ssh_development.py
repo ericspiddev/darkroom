@@ -1,6 +1,6 @@
-from interfaces.developments.darkroom_development import IDarkRoomDevelopment
-from interfaces.transports.darkroom_ssh import IDarkRoomSSHTransport
-from interfaces.transports.darkroom_transports import DarkRoomTransports
+from darkroom.interfaces.developments.darkroom_development import IDarkRoomDevelopment
+from darkroom.interfaces.transports.darkroom_ssh import IDarkRoomSSHTransport
+from darkroom.interfaces.transports.darkroom_transports import DarkRoomTransports
 
 class SSHDevelopment(IDarkRoomDevelopment):
 

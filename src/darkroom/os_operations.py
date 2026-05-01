@@ -1,4 +1,4 @@
-from interfaces.os.darkroom_os_operations import IDarkRoomOsOperations
+from darkroom.interfaces.os.darkroom_os_operations import IDarkRoomOsOperations
 
 class OsOperations():
     def __init__(self, os_ops: IDarkRoomOsOperations):
